@@ -5,20 +5,6 @@ public class IVoteService
     private Map<Integer,Set<String>> roster = new HashMap<Integer,Set<String>>();
     private String question;
 
-    public IVoteService()
-    {
-    }
-
-    public void Initialize()
-    {
-        //load question
-    }
-
-    public void Start()
-    {
-
-    }
-
     /**
     *  Method to assign question to be asked by IVoteService
     */

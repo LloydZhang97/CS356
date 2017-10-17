@@ -7,7 +7,7 @@ public class SimulationDriver{
     {
         System.out.println( "Welcome to the IVoter Simulation!" );
 
-        ArrayList<Question> test = new ArrayList<Question>();
+        ArrayList<IQuestion> test = new ArrayList<IQuestion>();
         Map<Integer,Student> roster = new HashMap<Integer,Student>();
 
         System.out.println( "Loading question(s) from file...");
@@ -40,7 +40,7 @@ public class SimulationDriver{
                     questionAnswers = inputLine.split(":")[1].split(",");
                 }
 
-                Question question;
+                IQuestion question;
                 if( questionType.equals( "single" ) )
                 {
                     question = new SingleQuestion( questionContent, questionAnswers );
@@ -74,7 +74,7 @@ public class SimulationDriver{
         IVoteService iVoteService = new IVoteService();
 
         System.out.println( "Finished Loading IVoteService service..." );
-        for( Question question : test )
+        for( IQuestion question : test )
         {
             System.out.printf( "\nStudents are now answering question: %s\n", question.GetContent() );
             iVoteService.AssignQuestion( question.GetContent() );

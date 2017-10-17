@@ -4,7 +4,7 @@ public class Student
 {
     private int studentId;
     private Set<String> answer;
-    private Question question;
+    private IQuestion question;
 
     public Student( int studentId )
     {
@@ -16,7 +16,7 @@ public class Student
         return answer;
     }
 
-    public void AssignQuestion( Question question )
+    public void AssignQuestion( IQuestion question )
     {
         this.question = question;
     }
