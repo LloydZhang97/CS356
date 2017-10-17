@@ -1,0 +1,20 @@
+#This file contains the all the questions to be used by the simulation driver
+#Any line that begins with # is ignored
+#Do not leave any empty line before the end of file
+#the structure of each question is:
+#question
+#type:{single,multiple}
+#content:{question}
+#answers:(comma-delimited list of answers)
+question
+type:single
+content:Whose a good boy?
+answers:A.I am,B.I'm not,C.What is the concept of good but a social construct created to reinforce societal norms,D.Potato
+question
+type:multiple
+content:What is the answer to life?
+answers:A.42,B.Infinity,C.Happiness,D.Coding
+question
+type:single
+content:Is this a working, fully oop program?
+answers:A.Yes,B.Absolutely,C.Positively,D.No,E.Probably Not,F.I need more answers,G.Stop,H.Please
