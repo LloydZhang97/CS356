@@ -15,14 +15,8 @@ public class SimulationDriver{
         {
             FileReader fileReader = new FileReader( "questions.txt" );
             BufferedReader in = new BufferedReader( fileReader );
-            String inputLine = "";
-            while( true )
+            for( String inputLine = in.readLine() ; inputLine != null; inputLine = in.readLine() )
             {
-                inputLine = in.readLine();
-                if( inputLine == null )
-                {
-                    break;
-                }
                 if( inputLine.charAt(0) == '#' )
                 {
                     continue;
